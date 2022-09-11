@@ -1,0 +1,22 @@
+<hibernate-configuration>
+    <session-factory>
+        <!-- Database connection settings -->
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/accounts</property>
+
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">зфыыцщкв</property>
+
+        <!-- Automatic creation or validation of DDL schema -->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <!-- Sql dialect -->
+
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</property>
+
+        <!-- Printing the sql queries to the console -->
+        <property name="show_sql">true</property>
+
+
+    </session-factory>
+</hibernate-configuration>
